@@ -1,0 +1,53 @@
+# Evapotranspiration {#ET}
+## Hargreaves ETo equation 
+$$ {ET}_{{o}}=0.0023\left({T}_{{mean}}+17.8\right)\left({T}_{\max }-{T}_{\min }\right)^{0.5} {R}_{{a}} $$
+
+## Penman-Monteith equation
+The Potential Evapotranspiration (PET) in PIHM++ uses the Penman-Monteith equation, that combined "the energy balance with the mass transfer method and derived an equation to compute the evaporation from an open water surface from standard climatological records of sunshine, temperature, humidity and wind speed" (FAO). 
+
+Penman-Monteith Equation is written as: 
+$$    \lambda ET =  \frac{\Delta (R_n - G) + \rho_a c_p \frac{(e_s -e_a)}{r_a}} {\Delta + \gamma (1+\frac{r_s}{r_a})} $$
+
+$$ \Delta=\frac{4098\left\{0.6108 \exp \left(\frac{17.27 T}{T+237.3}\right)\right]}{(T+237.3)^{2}} $$
+$$u_{2}=u_{z_g} \frac{4.87}{\ln (67.8 z_g-5.42)}$$
+
+
+Bulk surface resistance ($r_s$).
+
+$$r_{s}=\frac{r_{l}}{LAI_{\text { active }}}$$
+
+$$LAI_{\text active} = 0.5 LAI$$
+
+Aerodynamic resistance ($r_a$)
+$$r_{a}=\frac{\ln \left[\frac{Z_{m}-d}{Z_{o m}}\right] \ln \left[\frac{Z_{h}-d}{Z_{o h}}\right]}{k^{2} u_{z}}$$
+Atmospheric pressure at elevation $z$ is:
+$$P=101.3\left(\frac{293-0.0065 z}{293}\right)^{5.26}$$
+
+$$ \gamma =\frac{C_{p} P}{\varepsilon \lambda}=0.665 \times 10^{-3} P $$
+
+$$RH=100 \frac{{e}_{a}}{e}^{\circ(T)}$$
+
+$$ e^{\circ}(T)=0.6108 \operatorname{exp}\left[ \frac{17.27 T}{{T}+237.3}\right] $$
+
+
+Where
+
+- $R_n$ is the net radiation [$J/m^2$]
+- $G$ is the soil heat flux [$J/m2$], 
+- $(e_s - e_a)$ represents the vapour pressure deficit of the air [$J/m2$], 
+- $\rho_a$ is the mean air density at constant pressure [$kg/m^2$]
+- $D$ represents the slope of the saturation vapour pressure temperature relationship [$J/m2$], 
+- $r_s$ and $r_a$ are the (bulk) surface and aerodynamic resistances [$s/m$], 
+- $LAI$ and $LAI_{\text active}$ is the Leaf Area Index (LAI) and active LAI [$m^2/m^2$].
+- $r_l$ bulk stomatal resistance of the well-illuminated leaf [$s/m$],
+- $P$ atmospheric pressure [$kPa$],
+- $z$ elevation above sea level [$m$]
+- $\gamma$ psychrometric constant [$kPa/C$],
+- $l$ latent heat of vaporization, 2.45 [$MJ kg-1$],
+- $c_p$ specific heat at constant pressure, 1.013*10-3 [$MJ/kg/°C$],
+- $\varepsilon$ ratio molecular weight of water vapour/dry air = $0.622$.
+- $e°(T)$ saturation vapour pressure at the air temperature $T$ [$kPa$],
+- $T$ air temperature [$°C$],
+- $u_2$ wind speed at 2 m above ground surface [$m/s$],
+- $u_{z_g}$ measured wind speed at $z_g$ $m$ above ground surface [$m/s$],
+- $z_g$ height of measurement above ground surface [$m$].

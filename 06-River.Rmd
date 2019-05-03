@@ -1,0 +1,34 @@
+
+# River {#Riv}
+
+River water balance:
+$$
+  \frac{d S_{riv}}{d t} = Q_{d} + Q_{s} + Q_{g} + Q_{u}
+$$
+Where:
+
+- $S_{riv}$ - Water storage in River segments [$m$]
+- $Q_{d}$ - Water flux to downstream [$m^3/T$]
+- $Q_{s}$ - Surface water flux between river and element [$m^/T$]
+- $Q_{g}$ - Ground water flux between river and element [$m^3/T$]
+- $Q_{out}$ - Water flux from upstream(s) [$m^3/T$]
+
+
+$$
+Q_{d} = \frac{A_{cs}}{n} * {(\frac{A_{cs}}{Y})} ^ {\frac{2}{3}} * \sqrt[]{S} 
+$$
+
+where:
+
+- $A_{cs}$ - Average cross section area of river channels (THIS and downstream channel) [$m^2$]
+- $n$ - Manning's roughness [$T m^{-\frac{1}{3}}$]
+- $Y$ - Mean water level in river channels [$m$]
+- $S$ - Slope of river bed [$m/L$]
+
+$$
+Q_s = \frac{2}{3} C_{wr}  L  \sqrt[]{2g} {dH}^ \frac{3}{2}
+$$
+where:
+
+- $C_{wr} $ - Weir Discharge Coefficient [$1$]
+- $L$ - Length of weir [$m$]

@@ -1,0 +1,13 @@
+# Saturated Zone {#gw}
+
+## Impervious boundary
+## Horizontal flow
+$$ \frac {dS_{gw}}{dt} = q_r + q_{gw}$$
+
+where 
+
+- $S$ Ground water storage  [$m$]
+- $q_r$ Recharge to ground water [$m/T$]
+- $q_{gw}$ Horizontal ground water flow at three directions [$m^3/T$]
+  $$q_{gw} = \sum_{j=1}^3 Q_{j} / A$$
+- $A$ Area of the elements $i$, [$m^2$].

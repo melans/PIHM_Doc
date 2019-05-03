@@ -1,0 +1,32 @@
+# Acknowledge {-}
+
+
+The PIHM Modeling System was initially developed under research grants to The Pennsylvania State University (Penn State) from NSF (EAR 9876800, 1999-2007; EAR 03-10122, 2003-2007), NOAA (NA040AR4310085, 2003-2007), NASA (NAG5-12611, 2002-2005), with continuing grants from NSF and EPA for community model development.
+
+
+The PIHM model is a continuation of 17 years of modeling in hydrology and related fields. In addition to the Pennsylvania State University and Dr. Christopher Duffy, several guaduate student in Dr. Duffy group contributed to the model. We also want to thank all the users in past 17 years who contributed lots of hydrology-related researches that make PIHM community booming.
+
+Many thanks to contributors in PIHM family:
+
+| Name | Major Contriution |
+|:------|:-----|
+| Christopher Duffy | Leader of the PIHM group|
+| Lele Shu |  PIHM++ | 
+| |PIHMgisR |
+|   | PIHM analysis tools |
+|   | LUC-PIHM (Land Use Change) |
+| Yuning Shi | Flux-PIHM |   
+|   | MM-PIHM  | 
+| Yu Zhang | LE-PIHM (Landscape Evolution) |
+|   |  Lake-PIHM|
+| Chen Bao | RT-PIHM (Reaction transport) |
+| Xuan Yu | PIHM v2.2|
+|   |  BioBGC-PIHM |
+| Gopal Bhatt | PIHM v2.0; |
+|   | PIHMgis v3.0 |
+| Mukesh Kumar | PIHM v2.0 |
+| Shuangcai Li | PIHM-Sed (Sediment transport) |
+| Yizhong Qu | PIHM v1.0 --- The first version of PIHM | 
+
+
+

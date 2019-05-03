@@ -1,0 +1,16 @@
+# Lake
+
+Water balance of lake:
+$$
+  \frac{d S_{lake}}{d t} = P - E + ( q_{sf} +  q_{gw} + q_{riv})
+$$
+where 
+
+- $S_{lake}$ Lake water storage  [$m$]
+- $P$ Precipitation [$m/T$]
+- $E$ Evaporation from lake [$m/T$]
+- $q_{sf}$ Water flow from landsurface to lake, [$m/T$] $$q_{sf} = \sum_{j=1}^{Nele} Q_{j}^{sf} / A_{lake}$$
+- $q_{gw}$ Water flow from ground water to lake, [$m/T$] $$q_{gw} = \sum_{j=1}^{Nele} Q_{j}^{gw} / A_{lake}$$
+- $q_{riv}$  Water PIHM++.pngflow from rivers to lake, [$m/T$] $$q_{riv} = \sum_{j=1}^{Nriv} Q_{j}^{riv} / A_{lake}$$
+- $Nele$ and $Nriv$ are number of elements and river adjecent to the lake respectively. [$-$]
+- $A_i$ Area of the elements $i$, [$m^2$].

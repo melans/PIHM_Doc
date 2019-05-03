@@ -1,0 +1,16 @@
+# License {-}
+
+
+PIHM++ is open source software and the development is coordinated via the PIHM GitHub page ([GitHub Page](https://github.com/shulele/PIHM++) ).
+
+Penn State University makes no proprietary claims, either statutory or otherwise, to this version and release of PIHM and considers PIHM to be in the public domain for use by any person or entity for any purpose without any fee or charge.
+
+We request that any PIHM user include a credit to Penn State in any publications that result from the use of PIHM.
+
+
+Penn State University makes no proprietary claims, either statutory or otherwise, to this version and release of PIHM and considers PIHM to be in the public domain for use by any person or entity for any purpose without any fee or charge. We request that any PIHM user include a credit to Penn State in any publications that result from the use of PIHM. 
+
+
+The names Penn State shall not be used or referenced in any advertising or publicity which endorses or promotes any products or commercial entity associated with or using PIHM, or any derivative works thereof, without the written authorization o Penn State.
+
+PIHM is provided on an "AS IS" basis and any warranties, either express or implied, including but not limited to implied warranties of noninfringement, originality, merchantability and fitness for a particular purpose, are disclaimed. Penn State will not be obligated to provide the user with any support, consulting, training or assistance of any kind with regard to the use, operation and performance of PIHM nor to provide the user with any updates, revisions, new versions, error corrections or "bug" fixes. In no event will Penn State be liable for any damages, whatsoever, whether direct, indirect, consequential or special, which may result from an action in contract, negligence or other claim that arises out of or in connection with the access, use or performance of PIHM, including infringement actions.

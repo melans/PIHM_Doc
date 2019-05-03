@@ -1,0 +1,25 @@
+# Unsaturated Zone {#unsat}
+
+
+$$K(\psi)=k_{r}(\psi) K_{s a t}$$
+Relative pemeability function:
+$$k_{r}\left(\Theta_{e}\right)=\Theta_{e}^{1 / 2}\left[1-\left(1-\Theta_{e}^{1 / m}\right)^{m}\right]^{2}$$
+Effective saturation as a function of matrix pressure head (van Genuchten, 1980):
+
+
+
+$$\Theta_{e}(\psi)=\frac{\Theta-\Theta_{r}}{1-\Theta_{r}}=\frac{1}{[1+(|\alpha \psi|)^{\beta}] ^ m}  ~~~~~~~~~~ \psi<0$$
+$$\Theta_{e}(\psi)={1}  ~~~~~~~~~~ \psi \geq 0$$
+
+
+Relative permeability is a function of effective saturation $\Theta_{e}(\psi)$(Mualem, 1976)
+$$k_{r}\left(\Theta_{e}\right)=\Theta_{e}^{1 / 2}\left[1-\left(1-\Theta_{e}^{1 / m}\right)^{m}\right]^{2}$$
+
+
+Where
+- $\Theta_{r}$= residual soil moisture [dimensionless];
+- $\beta$= van Genuchten soil parameter, representing the degree of pore-size uniformity (as $\beta$ increases, uniformity increases) [dimensionless],  ($m = 1-1/\beta$) and
+- $\alpha$= van Genuchten soil parameter, representing the inverse characteristic length of the soil pores [$1/L$].
+
+
+*Put a example of the equations, i.e. $K_e$ along $\theta$*

@@ -1,0 +1,48 @@
+# Landsurface {#surf}
+Water balance on landsurface of each element.
+
+$$ \frac {dS_{sf}}{dt} = P_{net} - E_{ic} -  q_{inf} - q_{sf} $$
+
+
+where 
+
+- $S$ Ground water storage  [ $m$ ]
+- $q_r$ Recharge to ground water [ $m/T$ ]
+- $q_{sf}$ Horizontal ground water flow at three directions [ $m^3/T$ ]
+  $$q_{sf} = \sum_{j=1}^3 {Q_{j} } / {A}$$
+- $Q_{j}$ Horizontal ground water flow at three directions [ $m^3/T$ ]
+- $A$ Area of the element, [ $m^2$ ].
+
+## Infiltration
+Green-Ampt equations.
+$$q_{inf} = K_{eff} * \Delta \theta \frac{y0 + h_{f}}{h_f}$$
+```{r}
+library(PIHMgisR)
+y0=0:100/100
+theta=0.5 * (0:10)/10
+Ksat = 0.1 #m/day
+qi=theta * 0
+for(i in 1:length(theta)){
+  for(j in 1:length(y0)){
+    qi[i]=GreenAmpt(theta[i], thetas = 0.5, ksat = Ksat, Hfront = 0)
+  }
+}
+plot(theta, qi, ylab='Infiltration (m/day)' )
+```
+
+## Overland flow
+St. Venant equations
+Continuity equation
+
+$$ \frac{\partial Q}{\partial x}+\frac{\partial A}{\partial t}=0 $$
+
+Momentum Equation
+$$ \frac{1}{A} \frac{\partial Q}{\partial t}+\frac{1}{A} \frac{\partial}{\partial x}\left(\frac{Q^{2}}{A}\right)+g \frac{\partial y}{\partial x}-g\left(S_{o}-S_{f}\right)=0 $$
+Assumptions for St. Venant Equations
+
+- Flow is one-dimensional
+- Hydrostatic pressure prevails and vertical accelerations are negligible
+- Streamline curvature is small. 
+- Bottom slope of the channel is small.
+- Manning’s equation is used to describe resistance effects
+- The fluid is incompressible
